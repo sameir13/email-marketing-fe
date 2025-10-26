@@ -15,6 +15,9 @@ const nextConfig = {
         locales: ['en', 'zh'],
         defaultLocale: 'en',
     },
+    env: {
+        BACKEND_URI: process.env.BACKEND_API_URI
+    },
     // Webpack configuration for better performance
     webpack: (config, { dev, isServer }) => {
         // Optimize production builds
